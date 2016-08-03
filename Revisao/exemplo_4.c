@@ -1,13 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-void gerar_quadrados(int quadrados[], int termos){
-	int i;
-	
-	for(i = 0; i < termos; i++){
-		quadrados[i] = pow((i + 1), 2); 
-	}
-}
+void gerar_quadrados(int quadrados[], int termos);
 
 int main(){
 
@@ -27,6 +21,14 @@ int main(){
 
 	int i;
 	for(i = 0; i < n; i++){
-		printf("\nO quadrado de %d é: %d\n", (i + 1), quadrados[i]);	
+		printf("\nO quadrado de %d é: %d\n\n", (i + 1), quadrados[i]);	
 	}	
+}
+
+void gerar_quadrados(int quadrados[], int termos){
+	int i;
+	
+	for(i = 0; i < termos; i++){
+		quadrados[i] = pow((i + 1), 2); 
+	}
 }
